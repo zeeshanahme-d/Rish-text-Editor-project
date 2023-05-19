@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich text editor</title>
+    <script src="https://kit.fontawesome.com/16ab9b41ef.js" defer crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/icon.png">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <div class="col padding">
+                <div class=" col-1">
+                    <div class="first-box box">
+                        <input type="number" onchange="fun1(this)" id="font-size" value="18" min="1" max="100">
+                    </div>
+                    <div class="second-box  box">
+                        <button type="button" onclick="fun2()" data-Element="bold"><i
+                                class="fa fa-bold"></i></button>
+                        <button type="button" onclick="fun3()"><i class="fa fa-italic"></i></button>
+                        <button type="button" onclick="fun4()"><i class="fa fa-underline"></i></button>
+                    </div>
+                    <div class="third-box  box">
+                        <button type="button" onclick="fun5()"><i class="fa fa-align-left"></i></button>
+                        <button type="button" onclick="fun6()"><i class="fa fa-align-center"></i></button>
+                        <button type="button" onclick="fun7()"><i class="fa fa-align-right"></i></button>
+                    </div>
+                    <div class="third-box  box">
+                        <button><i class="fa fa-list-ul"></i></button>
+                        <button><i class="fa fa-list-ol"></i></button>
+                    </div>
+                    <div class="fourth-box  box">
+                        <button type="button" onclick="fun8()">aA</button>
+                        <button type="button" title="Clear All" onclick="fun9()"><i class="fa fa-text-slash"></i></button>
+                        <div>
+                            <input class="m-l" onchange="fun10(this)" type="color"><br><span class="m-l">T Color</span>
+                        </div>
+                        <div>
+                            <input class="m-l" onchange="fun11(this)" type="color"><br><span>Bg Color</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="m-l">
+                <textarea id="textarea" placeholder="Your Text Here;"></textarea>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
